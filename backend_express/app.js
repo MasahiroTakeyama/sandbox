@@ -12,8 +12,7 @@ app.get('/get/json', (req,res) => {
 }); 
 
 if (module === require.main) {
-  const server = app.listen(process.env.PORT || 1234, () => {
-    console.log(server.address());
+  const server = app.listen(process.env.PORT || 3000, () => {
     const port = server.address().port;
     console.log(`App listening on port ${port}`);
   });
